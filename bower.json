@@ -1,0 +1,26 @@
+{
+  "name": "angular-easy-api",
+  "homepage": "https://github.com/tusharghate/angular-easy-api",
+  "authors": [
+    "Tushar Ghate <tushghate@gmail.com>"
+  ],
+  "description": "An easy way to generate a dynamic API service in Angular.",
+  "main": "",
+  "keywords": [
+    "angular",
+    "api",
+    "js",
+    "javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
