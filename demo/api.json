@@ -1,0 +1,11 @@
+{
+    "host": "http://localhost/",
+    "endpoints": [
+    {
+        "sayHello": {
+            "namespace": "default",
+            "method": "POST"
+        }
+    }
+    ]
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+    <head>
+    	<meta charset="utf-8">
+    	<title>Angular Easy API</title>
+        <style>
+            html, body {
+                font-family: "Helvetica Neue", sans-serif;
+            }
+
+            body {
+                padding: 0.5em 2em;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div ng-controller="demoCtrl as demo">
+            <h2>Generated API:</h2>
+            <code class="prettyprint">
+                {{::demo.api}}
+            </code>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script type="text/javascript" src="./lib/angular-easy-api.js"></script>
+
+        <script type="text/javascript">
+            (function() {
+
+                angular
+                    .module('myApp', ['easyAPI'])
+                    .config(easyAPIConfig)
+                    .controller('demoCtrl', demoCtrl)
+
+                /**
+                 * EasyAPI Configuration
+                 * @param {Object} easyAPIProvider
+                 */
+                function easyAPIConfig(easyAPIProvider) {
+                    var api = {
+                        "host": "localhost",
+                        "protocol": "http",
+                    	"endpoints": {
+                    		"/todos/{id}": {
+                    			"namespace": "todo",
+                    			"methods": {
+                    				"updateTodo": "POST",
+                    				"getTodo": "GET"
+                    			}
+                    		},
+
+                    		"/todos/list": {
+                    			"namespace": "todo",
+                    			"methods": {
+                    				"listTodos": "GET"
+                    			}
+                    		}
+                    	}
+                    };
+
+                    easyAPIProvider.setJSON(api);
+                }
+
+                /**
+                 * Demo Controller
+                 */
+                function demoCtrl($log, easyAPI) {
+                    $log.info('DemoCtrl initialized ...');
+
+                    vm = this;
+
+                    vm.api = JSON.stringify(easyAPI, function(key, val) {
+                        return (typeof val === 'function') ? '[function]' : val;
+                    }, 2);
+                }
+
+            })(angular);
+        </script>
+
+    </body>
+</html>

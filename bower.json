@@ -4,8 +4,8 @@
   "authors": [
     "Tushar Ghate <tushghate@gmail.com>"
   ],
-  "description": "An easy way to generate a dynamic API service in Angular.",
-  "main": "",
+  "description": "An easy way to generate a dynamic, injectable API service.",
+  "main": "dist/angular-easy-api.js",
   "keywords": [
     "angular",
     "api",
@@ -18,7 +18,13 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "demo",
+    "README.md",
+    "package.json",
+    "bower.json",
+    ".DS_Store",
+    "gulpfile.js"
   ],
   "dependencies": {
     "angular": "^1.5.8"
