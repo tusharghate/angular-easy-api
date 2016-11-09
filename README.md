@@ -53,7 +53,7 @@ angular
     });
 ```
 
-+ Inject easyAPI into your controllers and services:
++ Inject `easyAPI` into your controllers and services:
 
 ```javascript
 angular
