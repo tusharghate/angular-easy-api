@@ -6,7 +6,7 @@
     "Tushar Ghate <tushghate@gmail.com>"
   ],
   "description": "An easy way to generate a dynamic, injectable API service.",
-  "main": "dist/angular-easy-api.min.js",
+  "main": "dist/angular-easy-api.js",
   "keywords": [
     "angular",
     "api",
