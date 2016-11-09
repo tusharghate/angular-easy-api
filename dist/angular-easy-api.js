@@ -6,6 +6,7 @@
         .provider('easyAPI', easyAPIProvider);
 
     util.$inject = ['$log'];
+
     function util($log) {
         return {
 
@@ -41,6 +42,7 @@
         this.$get = EasyAPI;
 
         EasyAPI.$inject = ['$log', '$http', 'util'];
+
         function EasyAPI($log, $http, util) {
 
             return _generate(_json);

@@ -23,6 +23,11 @@
   },
   "homepage": "https://github.com/tusharghate/angular-easy-api#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-jsbeautifier": "^2.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sequence": "^0.4.6",
+    "gulp-uglify": "^2.0.0",
+    "pump": "^1.0.1"
   }
 }
