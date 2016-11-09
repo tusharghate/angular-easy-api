@@ -5,9 +5,9 @@
         .factory('util', util)
         .provider('easyAPI', easyAPIProvider);
 
-    util.$inject = ['$log'];
+    util.$inject = [];
 
-    function util($log) {
+    function util() {
         return {
 
             /**
