@@ -1,7 +1,7 @@
 {
   "name": "angular-easy-api",
-  "version": "1.0.0",
-  "description": "An easy way to generate a dynamic API service in Angular. ",
+  "version": "1.0",
+  "description": "An easy way to generate a dynamic, injectable API service.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
