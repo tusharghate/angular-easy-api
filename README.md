@@ -61,9 +61,7 @@ angular
     .controller('todoCtrl', todoCtrl);
 
 function todoCtrl($log, easyAPI) {
-    var vm = this;
-
-    vm.get
+    var vm = this
     vm.list = list;
 
     function list() {
