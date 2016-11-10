@@ -198,16 +198,16 @@ For example, the following `API` JSON Object:
         },
 
         "/todo/{id}": {
-            namespace: "todo",
-            methods: {
+            "namespace": "todo",
+            "methods": {
                 "getTodo": "GET",
                 "updateTodo": "POST"
             }
         },
 
         "/todo/list": {
-            namespace: "todo",
-            methods: {
+            "namespace": "todo",
+            "methods": {
                 "listTodos": "GET"
             }
         }
