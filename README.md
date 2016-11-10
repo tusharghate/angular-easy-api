@@ -1,5 +1,5 @@
 # angular-easy-api
-An easy way to generate a dynamic, injectable API service.
+An easy way to generate a dynamic, injectable API service in Angular 1.5.x
 
 ## Quick Start
 
